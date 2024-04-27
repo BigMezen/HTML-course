@@ -13,9 +13,12 @@
 
     <div class="container">
 
-        <img src="Avatar.jpg" alt="Kirill Mezenev" class="avatar">
+        
 
-        <div class="info-text">
+        <div class="info">
+
+            <img src="Avatar.jpg" alt="Kirill Mezenev" class="avatar">
+            <div class="info-text">
             <h1> Кирилл Мезенев</h1>
             <p>Я ученик онлайн школы <strong>Result School</strong>. 
             <p>Начинающий Frontend разработчик.</p>
@@ -25,12 +28,12 @@
             <a href="https://t.me/kmezenev" target="_blank">Telegram<a>
             |
             <a href="https://twitter.com/BigMezen"target="_blank">Twitter</a>
-
+            </div>
         </div>
 
         <div class="card bg-blue">
             <h2>Хобби</h2>
-                <ol>
+                <ol class="list">
                     <li>Путешествия</li>
                     <li>Видеоигры</li>
                     <li>Велоспорт</li>
@@ -39,47 +42,54 @@
 
         <div class="card bg-pink">
             <h2>Образование</h2>
-            <table>
+            <table class="table">
                 <thead>
                     <tr>
                         <th>Название</th>
                         <th>Специальность</th>
-                        <th>Год окончания</th>
+                        <th>Год</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>Горный университет</td>
                         <td>Автоматизация тех процессов и производств в нефтегазопереработке</td>
-                        <td>2018-2022</td>
+                        <td>2018 - 2022</td>
+                    </tr>
+                    <tr>
+                        <td>ИТМО</td>
+                        <td>Информационная безопасность</td>
+                        <td>2022 - 2024</td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
-        <div>
+        <form action="" class="form">
             <h2>Обратная связь</h2>
 
-            <form action="">
-                <div>
+            <div class="form-row">
+
+                <div class="form-group">
                     <Label for="name">Ваше имя:</Label>
                     <input type="text" name="   " id="name"
                     placeholder="Введите имя">
                 </div>
 
-                <div>
+                <div class="form-group">
                     <Label for="email">Ваша почта:</Label>
                     <input type="email" name="   " id="email" placeholder="Введите email">
                 </div>
+            </div>
 
-                <div>
-                    <Label for="message">Ваше сообщение:</Label>
-                    <textarea name="" id="message" cols="30" rows="10" placeholder="Напишите сообщение..."></textarea>
-                </div>
+            <div class="form-group">
+                <Label for="message">Ваше сообщение:</Label>
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Напишите сообщение..."></textarea>
+            </div>
 
-                <input type="submit" value="Отправить" name="send" id="submit" class="btn">
-            </form>
-        </div>
+            <input type="submit" value="Отправить" name="send" id="submit" class="btn">
+        </form>
+       
 
     </div>
 </body>
